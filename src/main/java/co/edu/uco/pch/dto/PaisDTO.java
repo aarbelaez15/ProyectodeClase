@@ -8,11 +8,9 @@ public class PaisDTO {
     private UUID id;
     private String nombre;
 
-
     public PaisDTO() {
     	super();
     }
-
 
     public PaisDTO(final UUID id, final String nombre) { 
         setId(id);
@@ -31,7 +29,6 @@ public class PaisDTO {
         this.id = id;
         return this;
     }
-
 
     public final String getNombre() {
         return nombre;
