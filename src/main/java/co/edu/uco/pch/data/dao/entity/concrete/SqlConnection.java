@@ -15,11 +15,15 @@ public class SqlConnection {
 		setConexion(conexion);
 	}
 	
+	public SqlConnection() {
+		// TODO Auto-generated constructor stub
+	}
+
 	protected final Connection getConexion() {
 		return conexion;
 	}
 
-	private final void setConexion(final Connection conexion) {
+	protected final void setConexion(final Connection conexion) {
 		
 		if(!SQLHelper.isOpen(conexion)) {
 			var mensajeUsuario = MessageCatalogStrategy.getContenidoMensaje(CodigoMensaje.M00002);
